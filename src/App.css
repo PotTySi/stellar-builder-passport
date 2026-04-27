@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 40px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 940px;
+  background: white;
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.level {
+  color: #6d28d9;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.subtitle {
+  color: #6b7280;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.box {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  border-radius: 16px;
+}
+
+.wallet-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.wallet-option {
+  background: white;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.wallet-option.active {
+  border-color: #6d28d9;
+  background: #f5f3ff;
+}
+
+.wallet-option:hover {
+  background: #f9fafb;
+}
+
+.mono {
+  word-break: break-all;
+  font-family: monospace;
+  color: #374151;
+  text-align: center;
+}
+
+.wallet-row {
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+button {
+  width: 100%;
+  border: none;
+  padding: 14px 18px;
+  background: #111827;
+  color: white;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.secondary {
+  background: #6b7280;
+  margin-top: 12px;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  color: #2563eb;
+  font-weight: bold;
+  word-break: break-all;
+  text-align: center;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: bold;
+  text-align: center;
+}
+
+.box p {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .grid,
+  .wallet-table {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
